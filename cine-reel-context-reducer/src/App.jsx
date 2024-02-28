@@ -1,7 +1,7 @@
 import { useState } from "react";
+import { Outlet } from "react-router-dom";
 import Header from "./Header";
 import Sidebar from "./Sidebar";
-import MovieList from "./cine/MovieList";
 import { MovieContext, ThemeContext } from "./context/contexts";
 
 export default function App() {
@@ -17,7 +17,7 @@ export default function App() {
             <main>
               <div className="container grid lg:grid-cols-[218px_1fr] gap-[3.5rem]">
                 <Sidebar />
-                <MovieList />
+                <Outlet />
               </div>
             </main>
           </div>

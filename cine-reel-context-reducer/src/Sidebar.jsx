@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import comingSoon from "./assets/icons/commingSoon.svg";
 import fav from "./assets/icons/favourite.svg";
 import newRelease from "./assets/icons/newRelease.svg";
@@ -18,13 +19,13 @@ export default function Sidebar() {
           </a>
         </li>
         <li>
-          <a
+          <Link
             className="flex items-center space-x-2 px-5 py-3.5 rounded-lg"
-            href="#"
+            to={`catagory/newrelease`}
           >
             <img src={newRelease} width="24" height="24" alt="" />
             <span>New Releases</span>
-          </a>
+          </Link>
         </li>
         <li>
           <a
